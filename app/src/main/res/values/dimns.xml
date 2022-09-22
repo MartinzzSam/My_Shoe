@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="start_margin" type="dimen">10dp</item>
+    <item name="end_margin" type="dimen">10dp</item>
+    <item name="horizontal_margin" type="dimen">10dp</item>
+    <item name="vertical_margin" type="dimen">20dp</item>
+
+</resources>
