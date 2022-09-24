@@ -23,4 +23,5 @@
     <string name="shoes_inventory">Your Shoes Inventory</string>
     <string name="add_shoes">Add Shoes</string>
     <string name="welcome">Welcome To Your Shoes Inventory</string>
+    <string name="logout">Logout</string>
 </resources>

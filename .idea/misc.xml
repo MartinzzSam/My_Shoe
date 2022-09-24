@@ -4,14 +4,18 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable-v24/ic_baseline_add_24.xml" value="0.1885" />
+        <entry key="app/src/main/res/drawable/logout.xml" value="0.1975" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_instractions.xml" value="0.14913871260199457" />
         <entry key="app/src/main/res/layout/fragment_instructions.xml" value="0.17487046632124353" />
         <entry key="app/src/main/res/layout/fragment_login.xml" value="0.2752808988764045" />
         <entry key="app/src/main/res/layout/fragment_shoe_add.xml" value="0.14065840102607952" />
-        <entry key="app/src/main/res/layout/fragment_shoes.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/fragment_shoes.xml" value="0.2752808988764045" />
         <entry key="app/src/main/res/layout/fragment_welcome.xml" value="0.14" />
         <entry key="app/src/main/res/layout/item_shoe.xml" value="0.2670299727520436" />
+        <entry key="app/src/main/res/layout/menu.xml" value="0.1314596554850408" />
+        <entry key="app/src/main/res/menu-v26/menu.xml" value="0.18854166666666666" />
+        <entry key="app/src/main/res/menu/menu.xml" value="0.15476699444206926" />
       </map>
     </option>
   </component>

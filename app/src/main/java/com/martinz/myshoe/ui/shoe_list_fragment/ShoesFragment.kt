@@ -6,6 +6,8 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.view.children
+import androidx.core.view.get
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
@@ -25,6 +27,8 @@ class ShoesFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+
+
     }
 
 
@@ -35,6 +39,7 @@ class ShoesFragment : Fragment() {
     ): View? {
         _binding = DataBindingUtil.inflate(inflater , R.layout.fragment_shoes ,container , false)
         binding.lifecycleOwner = viewLifecycleOwner
+
         return binding.root
     }
 
@@ -91,9 +96,15 @@ class ShoesFragment : Fragment() {
 
     private fun onClick() {
         Log.i("Tag" , binding.toString())
-        binding.addNewShoes.setOnClickListener {
-            findNavController().navigate(ShoesFragmentDirections.actionShoesFragmentToShoeAddFragment())
+        binding.apply {
+            addNewShoes.setOnClickListener {
+                findNavController().navigate(ShoesFragmentDirections.actionShoesFragmentToShoeAddFragment())
+            }
+            myToolbar.setNavigationOnClickListener {
+                findNavController().navigate(ShoesFragmentDirections.actionShoesFragmentToLoginFragment())
+            }
         }
+
 
     }
 

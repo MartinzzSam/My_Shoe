@@ -24,25 +24,39 @@
         <!--    ConstraintLayout to give view stretch as free as possible    -->
 
 
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/myToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            app:navigationIcon="@drawable/logout"
+            android:layoutDirection="rtl"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" >
+
+        </androidx.appcompat.widget.Toolbar>
+
 
         <TextView
             android:id="@+id/tv_labe"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/shoes_inventory"
-            android:textSize="21sp"
             android:gravity="center_horizontal"
+            android:text="@string/shoes_inventory"
             android:textColor="@color/black"
+            android:textSize="21sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/guideline7" />
+            app:layout_constraintTop_toBottomOf="@+id/myToolbar" />
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             app:layout_constraintGuide_begin="50dp" />
+
 
         <ScrollView
             android:id="@+id/scrollItems"
@@ -51,8 +65,10 @@
             android:fillViewport="true"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tv_labe">
+            app:layout_constraintTop_toBottomOf="@id/tv_labe"
+            app:layout_constraintVertical_bias="0.0">
 
             <LinearLayout
                 android:id="@+id/container"
@@ -64,10 +80,6 @@
             </LinearLayout>
 
         </ScrollView>
-
-
-
-
 
         <ProgressBar
             android:id="@+id/progress"
